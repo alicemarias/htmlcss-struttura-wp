@@ -1,0 +1,65 @@
+/* header */
+header {
+  background-color:  yellow ;
+  width: 100% ;
+  height: 150px ;
+}
+
+/* main */
+main {
+  margin: 10px 0;
+}
+
+/* clearfix impostato sul main */
+main::after {
+  content: '';
+  display:table;
+  clear: both;
+}
+
+/* float left colonne main */
+main .col {
+  float:left;
+}
+
+
+/*  colonna sinistra */
+main .left {
+  background: pink;
+  width: 20%;
+  height: 300px;
+
+}
+
+/*  colonna centrale */
+main .center {
+  background: purple;
+  width: 50%;
+  height: 400px;
+  margin: 0 5% 0 5%;
+}
+
+/* colonna destra */
+main .right {
+
+  width: 20%;
+  height: 250px;
+
+}
+
+.widget {
+  margin-bottom: 10px;
+  background: pink;
+  width: 100%;
+  height: 40%;
+}
+.widget:last-child {
+  margin-bottom: 0;
+}
+
+/* footer  */
+footer {
+  background: cyan;
+  height: 100px;
+
+}
